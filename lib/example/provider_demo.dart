@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_provider/model/CounterModel.dart';
+import '../model/CounterModel.dart';
 import 'package:provider/provider.dart';
 
 class FirstScreen extends StatelessWidget {
