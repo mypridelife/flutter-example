@@ -20,6 +20,7 @@ import 'example/router_transition/pages.dart';
 import 'example/search_bar/search_bar_demo.dart';
 import 'example/sliver_demo.dart';
 import 'example/splash_screen.dart';
+import 'example/swipe_to_dismiss_demo.dart';
 import 'example/textfiled_foces.dart';
 import 'example/wrap_demo.dart';
 import 'model/CounterModel.dart';
@@ -65,6 +66,11 @@ class RouterPage extends StatelessWidget {
 
   List<Widget> pageList(BuildContext context) {
     return [
+      OutlineButton(
+        child: Text("SwipeToDissmissDemo"),
+        onPressed: () => Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => SwipeToDissmissDemo())),
+      ),
       OutlineButton(
         child: Text("PullToRefresh"),
         onPressed: () => Navigator.of(context)
